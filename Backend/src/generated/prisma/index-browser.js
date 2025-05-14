@@ -128,7 +128,12 @@ exports.Prisma.UserScalarFieldEnum = {
   role: 'role',
   password: 'password',
   createdAt: 'createdAt',
-  updatedAt: 'updatedAt'
+  updatedAt: 'updatedAt',
+  isEmailVerified: 'isEmailVerified',
+  forgotPasswordToken: 'forgotPasswordToken',
+  forgotPasswordExpiry: 'forgotPasswordExpiry',
+  emailVerificationToken: 'emailVerificationToken',
+  emailVerificationExpiry: 'emailVerificationExpiry'
 };
 
 exports.Prisma.ProblemScalarFieldEnum = {

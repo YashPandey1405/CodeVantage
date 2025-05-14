@@ -35,6 +35,13 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
+  // New fields added below
+  isEmailVerified         Boolean   @default(false)
+  forgotPasswordToken     String?
+  forgotPasswordExpiry    DateTime?
+  emailVerificationToken  String?
+  emailVerificationExpiry DateTime?
+
   problems Problem[]
 }
 
@@ -50,7 +57,7 @@ model Problem {
   hints       String?
   editorial   String?
 
-  testcases          Json // 
+  testcases          Json
   codeSnippets       Json
   referenceSolutions Json
 
